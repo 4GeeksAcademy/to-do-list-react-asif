@@ -12,13 +12,14 @@
 
 body {
     margin-top: 90px;
-    background: rgb(255, 246, 246);
+    background: rgb(255, 237, 136);
 }
 
 ul li {
     border: 1px solid gray;
     list-style: none;
     padding: 6px;
+    
 }
 
 ul {
@@ -34,6 +35,24 @@ h1 {
 input {
     border: none;
     width: 100%;
-    background: rgb(255, 246, 246);
+    background: rgb(255, 243, 177);
+    outline: none;
+}
+
+.container {
+    width: 50%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    padding: 25px;
+    background: rgb(255, 243, 177);
+}
+
+.trashButton {
+    float: right;
+}
+
+.todos {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 

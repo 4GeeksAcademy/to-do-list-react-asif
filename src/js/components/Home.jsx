@@ -9,7 +9,7 @@ const Home = () => {
 	const [todos, setTodos] = useState([]);
 	return (
 		<div className="container">
-			<h1>My todos</h1>
+			<h1>TODO LIST</h1>
 			<ul>
 				<li><input type="text"
 					onChange={(e) => setInputValue(e.target.value)}
@@ -25,8 +25,8 @@ const Home = () => {
 					placeholder="What needs to be done?" /></li>
 
 				{todos.map((item, index) =>(
-					<li>
-						{item} <i class="fa-solid fa-trash" onClick={() => setTodos(todos.filter((t, currentIndex) => index !== currentIndex))}></i>
+					<li className="todos">
+						{item} <i class="fa-solid fa-trash trashButton" onClick={() => setTodos(todos.filter((t, currentIndex) => index !== currentIndex))}></i>
 						</li>
 				))}
 			</ul>
